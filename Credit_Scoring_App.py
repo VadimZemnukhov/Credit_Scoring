@@ -6,7 +6,7 @@ import sklearn
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-with open('data/model.pickle', 'rb') as f:
+with open('model.pickle', 'rb') as f:
     model = pickle.load(f)
 
 X = pd.read_csv('data/X.csv')
